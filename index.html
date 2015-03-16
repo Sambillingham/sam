@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>Picfair - your images are valuable</title>
+
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/style.css" />
+
+		<script src="js/jquery.js"></script>
+		<script src="js/handlebars.js"></script>
+		<script src="js/moment.js"></script>
+		<script src="js/picfair.js"></script>
+	</head>
+
+	<body>
+
+		<header id="top">
+			<h1>
+				<img src="images/logo.jpg" alt="Picfair">
+			</h1>
+		</header>
+
+		<header id="sticky">
+			<div class="container">
+
+				<img src="images/logo.jpg" alt="Picfair">
+
+				<nav>
+					<a href="index.html">Home</a>
+					<a href="about.html">About</a>
+					<a href="contact.html">Contact</a>
+				</nav>
+
+			</div>
+		</header>
+
+
+
+		<article class="container">
+			<h2>A new way to sell your images</h2>
+
+			<p>An open-to-all image market, controlled by you... if someone wants to use your pic... you get paid.</p>
+
+			<form action="submit.html" method="post">
+
+				<div class="inputs">
+					<!-- form inputs here -->
+
+					<div>
+						<label>Username</label>
+						<input type="text">
+					</div>
+
+					<div>
+						<label>Email</label>
+						<input type="email">
+					</div>
+
+					<div>
+						<label>Password</label>
+						<input type="password">
+					</div>
+
+				</div>
+
+				<input type="submit" value="Sign up to Picfair">
+
+			</form>
+
+
+			<div id="devices">
+
+				<img src="images/picfair-ipad.png" id="ipad">
+				<img src="images/picfair-iphone.png" id="iphone">
+
+			</div>
+
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in ligula nisi. Mauris ultricies nisl sit amet dui consequat fringilla. Sed vulputate sollicitudin justo ac dignissim. Mauris pulvinar condimentum elit quis pretium. Suspendisse tincidunt feugiat nisl a adipiscing. Nullam facilisis ultricies dolor in sagittis. Sed sem velit, tincidunt et elementum eget, lacinia sed ipsum. Mauris ac leo diam. Suspendisse vitae mauris in nisl varius facilisis ut vitae justo. Praesent sagittis dolor nec ipsum interdum, pulvinar auctor magna eleifend. Donec facilisis posuere felis vitae hendrerit.</p>
+
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in ligula nisi. Mauris ultricies nisl sit amet dui consequat fringilla. Sed vulputate sollicitudin justo ac dignissim. Mauris pulvinar condimentum elit quis pretium. Suspendisse tincidunt feugiat nisl a adipiscing. Nullam facilisis ultricies dolor in sagittis. Sed sem velit, tincidunt et elementum eget, lacinia sed ipsum. Mauris ac leo diam. Suspendisse vitae mauris in nisl varius facilisis ut vitae justo. Praesent sagittis dolor nec ipsum interdum, pulvinar auctor magna eleifend. Donec facilisis posuere felis vitae hendrerit.</p>
+
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in ligula nisi. Mauris ultricies nisl sit amet dui consequat fringilla. Sed vulputate sollicitudin justo ac dignissim. Mauris pulvinar condimentum elit quis pretium. Suspendisse tincidunt feugiat nisl a adipiscing. Nullam facilisis ultricies dolor in sagittis. Sed sem velit, tincidunt et elementum eget, lacinia sed ipsum. Mauris ac leo diam. Suspendisse vitae mauris in nisl varius facilisis ut vitae justo. Praesent sagittis dolor nec ipsum interdum, pulvinar auctor magna eleifend. Donec facilisis posuere felis vitae hendrerit.</p>
+
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in ligula nisi. Mauris ultricies nisl sit amet dui consequat fringilla. Sed vulputate sollicitudin justo ac dignissim. Mauris pulvinar condimentum elit quis pretium. Suspendisse tincidunt feugiat nisl a adipiscing. Nullam facilisis ultricies dolor in sagittis. Sed sem velit, tincidunt et elementum eget, lacinia sed ipsum. Mauris ac leo diam. Suspendisse vitae mauris in nisl varius facilisis ut vitae justo. Praesent sagittis dolor nec ipsum interdum, pulvinar auctor magna eleifend. Donec facilisis posuere felis vitae hendrerit.</p>
+
+
+			<section id="carousel-holder">
+
+				<div id="carousel">
+
+					<div id="slides">
+						<img src="images/slide1.png" />
+						<img src="images/slide2.png" />
+						<img src="images/slide3.png" />
+						<img src="images/slide4.png" />
+					</div>
+
+				</div>
+
+				<a href="#" id="prev"><img src="images/left-arrow.png" /></a>
+				<a href="#" id="next"><img src="images/right-arrow.png" /></a>
+			</section>
+
+			<section id="twitter-feed">
+					<p>Tweets</p>
+					<ul id="tweets">
+					</ul>
+			</section>
+
+			<footer>
+				<small>&copy; 2014 Picfair</small>
+			</footer>
+
+
+		</article>
+
+		<script id="tweets-template" type="text/x-handlebars-template">
+				{{#each Tweets}}
+				<li>
+					{{textToLinks this.text}}
+					<time>- {{timeFromNow}}</time>
+				</li>
+				{{/each}}
+		</script>
+
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
